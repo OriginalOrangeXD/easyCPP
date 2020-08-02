@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/robertd/Documents/dev/HelloWorld/src/play.cpp
-play.h
-/home/robertd/Documents/dev/HelloWorld/src/play.h
+/home/robertd/Documents/dev/HelloWorld/src/Log.h
 iostream
 -
+
+/home/robertd/Documents/dev/HelloWorld/src/Main.cpp
+iostream
+-
+Log.h
+/home/robertd/Documents/dev/HelloWorld/src/Log.h
+play.h
+/home/robertd/Documents/dev/HelloWorld/src/play.h
 
 /home/robertd/Documents/dev/HelloWorld/src/play.h
 

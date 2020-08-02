@@ -4,7 +4,10 @@
 
 int main()
 {
-    Log("HELLO WORLD!!!");
+    int x = 5;
+    bool equ = x == 5;
+    if(equ)
+        Log("Test");
     Zplay();
     std::cin.get();
 }
