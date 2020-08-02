@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/robertd/Documents/dev/HelloWorld/src/play.cpp
+play.h
+/home/robertd/Documents/dev/HelloWorld/src/play.h
+iostream
+-
+
+/home/robertd/Documents/dev/HelloWorld/src/play.h
+
