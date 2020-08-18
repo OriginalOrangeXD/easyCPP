@@ -1,6 +1,9 @@
 #include <iostream>
 
-void Logr()
+int getInteger()
 {
-    std::cout << "Test 12" << std::endl
+    std::cout << "Enter an integer: ";
+    int x{};
+    std::cin >> x;
+    return x;
 }

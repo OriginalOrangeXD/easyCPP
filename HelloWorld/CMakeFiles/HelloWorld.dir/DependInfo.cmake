@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/robertd/Documents/dev/HelloWorld/src/Log.cpp" "/home/robertd/Documents/dev/HelloWorld/CMakeFiles/HelloWorld.dir/src/Log.cpp.o"
   "/home/robertd/Documents/dev/HelloWorld/src/Main.cpp" "/home/robertd/Documents/dev/HelloWorld/CMakeFiles/HelloWorld.dir/src/Main.cpp.o"
   "/home/robertd/Documents/dev/HelloWorld/src/play.cpp" "/home/robertd/Documents/dev/HelloWorld/CMakeFiles/HelloWorld.dir/src/play.cpp.o"
+  "/home/robertd/Documents/dev/HelloWorld/src/test.cpp" "/home/robertd/Documents/dev/HelloWorld/CMakeFiles/HelloWorld.dir/src/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -11,3 +11,5 @@ CMakeFiles/HelloWorld.dir/src/Main.cpp.o: src/play.h
 CMakeFiles/HelloWorld.dir/src/play.cpp.o: src/play.cpp
 CMakeFiles/HelloWorld.dir/src/play.cpp.o: src/play.h
 
+CMakeFiles/HelloWorld.dir/src/test.cpp.o: src/test.cpp
+

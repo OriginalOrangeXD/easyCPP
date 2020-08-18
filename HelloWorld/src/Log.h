@@ -2,6 +2,6 @@
 #define LOG_H
 
 #include <iostream>
-void Log(const char*);
+class Log;
 
 #endif
