@@ -1,8 +1,8 @@
+#include <array>
 #include <iostream>
 #include "Log.h"
 #include "play.h"
-
-int getInteger();
+#include "io.h"
 
 enum nums
 {
@@ -30,31 +30,50 @@ public:
 void cccc(int&)
 {}
 
-int getInt()
-{
-    std::cout << "Enter in a number: ";
-    int num{};
-    std::cin >> num;
-    return num;
-}
 
 int doubleNumber(int a)
 {
     return a*2;
 }
 
-void write(int x)
+int combo(int combo[])
 {
-    std::cout << "The sum of the 2 numbers is: " << x << std::endl;
+    return 1;
 }
 
 int main()
 {
-    int x{getInteger()};
-    int y{getInteger()};
+
+    int x{getInt()};
+    int y{getInt()};
 
     write(x+y);
-
+    int nums[12];
+    nums[0] = 1;
+    nums[1] = 1;
+    nums[2] = 2;
+    nums[3] = 2;
+    nums[4] = 3;
+    nums[5] = 3;
+    nums[6] = 4;
+    nums[7] = 4;
+    nums[8] = 5;
+    nums[9] = 5;
+    nums[10] = 6;
+    nums[11] = 6;
+    int n = 12;
+    std::cout << (1 << n) << std::endl;
+    for(int mask = 0; mask < (1 << n); mask++)
+    {
+        int subsetSum{};
+        for(int i = 0; i < n; i++)
+        {
+            if(mask & (1 << i))
+                subsetSum += nums[i];
+        }
+        if(subsetSum == 7)
+            std::cout << mask << std::endl;
+    }
     return 0;
     /*
     std::cout << "Enter a Number: \n";

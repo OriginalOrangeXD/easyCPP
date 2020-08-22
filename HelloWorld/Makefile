@@ -197,6 +197,33 @@ src/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
+src/io.o: src/io.cpp.o
+
+.PHONY : src/io.o
+
+# target to build an object file
+src/io.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/src/io.cpp.o
+.PHONY : src/io.cpp.o
+
+src/io.i: src/io.cpp.i
+
+.PHONY : src/io.i
+
+# target to preprocess a source file
+src/io.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/src/io.cpp.i
+.PHONY : src/io.cpp.i
+
+src/io.s: src/io.cpp.s
+
+.PHONY : src/io.s
+
+# target to generate assembly for a file
+src/io.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/src/io.cpp.s
+.PHONY : src/io.cpp.s
+
 src/play.o: src/play.cpp.o
 
 .PHONY : src/play.o
@@ -266,6 +293,9 @@ help:
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"
+	@echo "... src/io.o"
+	@echo "... src/io.i"
+	@echo "... src/io.s"
 	@echo "... src/play.o"
 	@echo "... src/play.i"
 	@echo "... src/play.s"
