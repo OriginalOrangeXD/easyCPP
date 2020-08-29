@@ -1,27 +1,27 @@
 [
 {
   "directory": "/home/robertd/Documents/dev/HelloWorld",
-  "command": "/usr/bin/c++     -Wall -Werror -std=c++14   -o CMakeFiles/HelloWorld.dir/src/Log.cpp.o -c /home/robertd/Documents/dev/HelloWorld/src/Log.cpp",
+  "command": "/usr/bin/c++    -Wall -Werror -std=c++14 -g -o CMakeFiles/HelloWorld.dir/src/Log.cpp.o -c /home/robertd/Documents/dev/HelloWorld/src/Log.cpp",
   "file": "/home/robertd/Documents/dev/HelloWorld/src/Log.cpp"
 },
 {
   "directory": "/home/robertd/Documents/dev/HelloWorld",
-  "command": "/usr/bin/c++     -Wall -Werror -std=c++14   -o CMakeFiles/HelloWorld.dir/src/Main.cpp.o -c /home/robertd/Documents/dev/HelloWorld/src/Main.cpp",
+  "command": "/usr/bin/c++    -Wall -Werror -std=c++14 -g -o CMakeFiles/HelloWorld.dir/src/Main.cpp.o -c /home/robertd/Documents/dev/HelloWorld/src/Main.cpp",
   "file": "/home/robertd/Documents/dev/HelloWorld/src/Main.cpp"
 },
 {
   "directory": "/home/robertd/Documents/dev/HelloWorld",
-  "command": "/usr/bin/c++     -Wall -Werror -std=c++14   -o CMakeFiles/HelloWorld.dir/src/io.cpp.o -c /home/robertd/Documents/dev/HelloWorld/src/io.cpp",
+  "command": "/usr/bin/c++    -Wall -Werror -std=c++14 -g -o CMakeFiles/HelloWorld.dir/src/io.cpp.o -c /home/robertd/Documents/dev/HelloWorld/src/io.cpp",
   "file": "/home/robertd/Documents/dev/HelloWorld/src/io.cpp"
 },
 {
   "directory": "/home/robertd/Documents/dev/HelloWorld",
-  "command": "/usr/bin/c++     -Wall -Werror -std=c++14   -o CMakeFiles/HelloWorld.dir/src/play.cpp.o -c /home/robertd/Documents/dev/HelloWorld/src/play.cpp",
+  "command": "/usr/bin/c++    -Wall -Werror -std=c++14 -g -o CMakeFiles/HelloWorld.dir/src/play.cpp.o -c /home/robertd/Documents/dev/HelloWorld/src/play.cpp",
   "file": "/home/robertd/Documents/dev/HelloWorld/src/play.cpp"
 },
 {
   "directory": "/home/robertd/Documents/dev/HelloWorld",
-  "command": "/usr/bin/c++     -Wall -Werror -std=c++14   -o CMakeFiles/HelloWorld.dir/src/test.cpp.o -c /home/robertd/Documents/dev/HelloWorld/src/test.cpp",
+  "command": "/usr/bin/c++    -Wall -Werror -std=c++14 -g -o CMakeFiles/HelloWorld.dir/src/test.cpp.o -c /home/robertd/Documents/dev/HelloWorld/src/test.cpp",
   "file": "/home/robertd/Documents/dev/HelloWorld/src/test.cpp"
 }
 ]

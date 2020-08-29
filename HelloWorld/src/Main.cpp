@@ -36,14 +36,62 @@ int doubleNumber(int a)
     return a*2;
 }
 
+double getDouble()
+{
+    std::cout << "Enter a double value: ";
+    double num{0.0};
+    std::cin >> num;
+    return num;
+}
+
+char getChar()
+{
+    std::cout << "Enter one of the following: +, -, *, or /: "; 
+    char symbol{};
+    std::cin >> symbol;
+    return symbol;
+}
+
+double doubleMath(double x, double y, char sym)
+{
+    if(sym == '*')
+        return x * y;
+    else if(sym == '/')
+        return x/y;
+    else if(sym == '+')
+        return x+y;
+    else if(sym == '-')
+        return x-y;
+    else 
+        return 0;
+}
+
 int combo(int combo[])
 {
     return 1;
 }
 
+double gravitySim(int t, double gravity, double height)
+{
+    return (-gravity*(t*t)/2)+height;
+}
 int main()
 {
-
+    double gravity{9.8};
+    double height{100.0};
+    for(int x = 1; x <= 5; x++)
+    {
+        double dist{gravitySim(x, gravity, height)};
+        if(dist > 0)
+            std::cout << "At " << x << " seconds, the ball is at height: " << dist << " meters\n";
+        else
+            std::cout << "At " << x << " seconds, the ball is on the ground.\n";
+    }
+    return 0;
+    double X{getDouble()};
+    double Y{getDouble()};
+    char sym{getChar()};
+    std::cout << X << " " << sym << " " << Y << " is " << doubleMath(X, Y, sym) << "\n";
     int x{getInt()};
     int y{getInt()};
 
