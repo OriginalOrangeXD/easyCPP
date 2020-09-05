@@ -6,6 +6,7 @@ CMakeFiles/HelloWorld.dir/src/Log.cpp.o: src/Log.h
 
 CMakeFiles/HelloWorld.dir/src/Main.cpp.o: src/Log.h
 CMakeFiles/HelloWorld.dir/src/Main.cpp.o: src/Main.cpp
+CMakeFiles/HelloWorld.dir/src/Main.cpp.o: src/constants.h
 CMakeFiles/HelloWorld.dir/src/Main.cpp.o: src/io.h
 CMakeFiles/HelloWorld.dir/src/Main.cpp.o: src/play.h
 

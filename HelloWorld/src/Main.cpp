@@ -1,3 +1,4 @@
+#include "constants.h"
 #include <array>
 #include <iostream>
 #include "Log.h"
@@ -30,6 +31,10 @@ public:
 void cccc(int&)
 {}
 
+bool isEven(int a)
+{
+    return !(a%2);
+}
 
 int doubleNumber(int a)
 {
@@ -75,10 +80,35 @@ double gravitySim(int t, double gravity, double height)
 {
     return (-gravity*(t*t)/2)+height;
 }
+void tttt(double &test)
+{}
 int main()
 {
-    double gravity{9.8};
-    double height{100.0};
+    
+    std::cout << "Enter a integer: ";
+    int small{};
+    std::cin >> small;
+    double test{0.1+0.2};
+    tttt(test);
+    std::cout << "Enter a larger integer: ";
+    int large{};
+    std::cin >> large;
+    if(large < small)
+    {
+        std::cout << "Swapping the values\n";
+        int tmp = small;
+        small = large;
+        large = tmp;
+    }// tmp is destroyed
+    std::cout << "The smaller integer is: " << small << "\n";
+    std::cout << "The larger integer is: " << large << "\n";
+    return 0;
+    double d1{100.00 - 99.99};
+    double d2{10.00 - 9.99};
+    std::cout << d1 << std::endl << d2;
+    std::cout << isEven(3);
+    double height{getDouble()};
+    std::cout << "At 0 seconds the ball is at : " << height << " meters\n";
     for(int x = 1; x <= 5; x++)
     {
         double dist{gravitySim(x, gravity, height)};
@@ -87,7 +117,6 @@ int main()
         else
             std::cout << "At " << x << " seconds, the ball is on the ground.\n";
     }
-    return 0;
     double X{getDouble()};
     double Y{getDouble()};
     char sym{getChar()};
