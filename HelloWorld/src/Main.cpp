@@ -14,6 +14,14 @@ int a = 0;
 int b = 1;
 int c = 2;
 
+int getAge()
+{
+    int age{};
+    std::cin >> age;
+    std::cin.ignore(32767, '\n');
+    return age;
+}
+
 class Player
 {
 public:
@@ -82,9 +90,25 @@ double gravitySim(int t, double gravity, double height)
 }
 void tttt(double &test)
 {}
+
+bool passOrFail()
+{
+    static int passNum{3};
+    return (--passNum >=0);
+}
+
 int main()
 {
-    
+    int age{getAge()};
+    std::string name{};
+    std::getline(std::cin, name);
+    return 0;
+    std::cout << "User #1: " << (passOrFail() ? "Pass" : "Fail") << '\n';
+    std::cout << "User #2: " << (passOrFail() ? "Pass" : "Fail") << '\n';
+    std::cout << "User #3: " << (passOrFail() ? "Pass" : "Fail") << '\n';
+    std::cout << "User #4: " << (passOrFail() ? "Pass" : "Fail") << '\n';
+    std::cout << "User #5: " << (passOrFail() ? "Pass" : "Fail") << '\n';
+    return 0;
     std::cout << "Enter a integer: ";
     int small{};
     std::cin >> small;
@@ -102,7 +126,6 @@ int main()
     }// tmp is destroyed
     std::cout << "The smaller integer is: " << small << "\n";
     std::cout << "The larger integer is: " << large << "\n";
-    return 0;
     double d1{100.00 - 99.99};
     double d2{10.00 - 9.99};
     std::cout << d1 << std::endl << d2;

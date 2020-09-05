@@ -1,4 +1,8 @@
 #ifndef CONSTANTS_H
 #define CONSTANTS_H
-constexpr double gravity{9.8};
+const double gravity = 9.81;
+namespace constants
+{
+    inline constexpr int max_class_size = 30;
+}
 #endif
