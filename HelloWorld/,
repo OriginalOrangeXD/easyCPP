@@ -1,5 +1,4 @@
 #include "constants.h"
-#include <string>
 #include <array>
 #include <iostream>
 #include "Log.h"
@@ -14,6 +13,14 @@ enum nums
 int a = 0;
 int b = 1;
 int c = 2;
+
+int getAge()
+{
+    int age{};
+    std::cin >> age;
+    std::cin.ignore(32767, '\n');
+    return age;
+}
 
 class Player
 {
@@ -52,7 +59,7 @@ double getDouble()
 
 char getChar()
 {
-    std::cout << "Enter one of the following: +, -, *, or /: ";
+    std::cout << "Enter one of the following: +, -, *, or /: "; 
     char symbol{};
     std::cin >> symbol;
     return symbol;
@@ -68,7 +75,7 @@ double doubleMath(double x, double y, char sym)
         return x+y;
     else if(sym == '-')
         return x-y;
-    else
+    else 
         return 0;
 }
 
@@ -89,125 +96,20 @@ bool passOrFail()
     static int passNum{3};
     return (--passNum >=0);
 }
-std::string blueToRed(std::string str1)
-{
-    str1.erase(8,3);
-    str1.insert(8, "blue");
-    return str1;
-}
-
-enum MonsterType
-{
-    MONSTER_GOBLINS,
-    MONSTER_ORCS,
-    MONSTER_TROLLS,
-    MONSTER_ORGRES,
-    MONSTER_SKELETONS
-};
-struct ADD_INFO
-{
-    int ADD_CLICKED;
-    int ADD_SHOWN;
-    int ADD_EARNED;
-};
-void addPrint(ADD_INFO add)
-{
-    std::cout << add.ADD_CLICKED << std::endl;
-    std::cout << add.ADD_SHOWN << std::endl;
-    std::cout << add.ADD_EARNED << std::endl;
-    std::cout << add.ADD_CLICKED/100 * add.ADD_SHOWN * add.ADD_EARNED;
-}
-int calculate(int x, int y, char operator1)
-{
-    switch(operator1)
-    {
-        case '*':
-            return x * y;
-        case '/':
-            return x/y;
-        case '+':
-            return x + y;
-        case '-':
-            return x-y;
-        case '%':
-            return x%y;
-        default:
-            std::cout << "Invalid operator" << std::endl;
-            return 0;
-    }
-}
-enum class Animal{
-    pig,
-    chicken,
-    goat,
-    cat,
-    dog,
-    ostrich,
-};
-std::string getAnimalName(Animal animal)
-{
-    switch(animal)
-    {
-        case Animal::pig:
-            return "Pig";
-        case Animal::chicken:
-            return "Chicken";
-        case Animal::goat:
-            return "Goat";
-        case Animal::cat:
-            return "Cat";
-        case Animal::dog:
-            return "Dog";
-        case Animal::ostrich:
-            return "Ostrich";
-        default:
-            return "Invalid animal name\n";
-    }
-}
-int printNumberOfLegs(Animal animal)
-{
-    switch(animal)
-    {
-        case Animal::pig:
-        case Animal::goat:
-        case Animal::cat:
-        case Animal::dog:
-            return 4;
-        case Animal::chicken:
-        case Animal::ostrich:
-            return 2;
-        default:
-            std::cout << "Invalid animal\n";
-            return 0;
-    }
-}
 
 int main()
 {
-    Animal cat{Animal::cat};
-    Animal chicken{Animal::chicken};
-    std::cout << "A " << getAnimalName(cat) << " has " << printNumberOfLegs(cat) << " legs.\n";
-    std::cout << "A " << getAnimalName(chicken) << " has " << printNumberOfLegs(chicken) << " legs.\n";
-    return 0;
-    int x1{getInt()};
-    int y1{getInt()};
-    int c{getChar()};
-    std::cout << calculate(x1, y1, c);
-    return 0;
-    MonsterType monster{MONSTER_TROLLS};
-    std::cout << monster;
-    return 0;
-    std::string sttr{"I saw a red car yesterday."};
-    sttr.replace(8, 3, "blue");
+    int age{getAge()};
     std::string name{};
-    std::cout << "Enter your full name: ";
     std::getline(std::cin, name);
-    int age{};
-    std::cout << "Enter your age: ";
-    std::cin >> age;
-    std::cout << "You've lived " << static_cast<double>(age)/name.length() << " years for each letter in your name." << std::endl;
-
-    std::cout << "Enter a integer ";
+    return 0;
+    std::cout << "User #1: " << (passOrFail() ? "Pass" : "Fail") << '\n';
+    std::cout << "User #2: " << (passOrFail() ? "Pass" : "Fail") << '\n';
+    std::cout << "User #3: " << (passOrFail() ? "Pass" : "Fail") << '\n';
+    std::cout << "User #4: " << (passOrFail() ? "Pass" : "Fail") << '\n';
+    std::cout << "User #5: " << (passOrFail() ? "Pass" : "Fail") << '\n';
+    return 0;
+    std::cout << "Enter a integer: ";
     int small{};
     std::cin >> small;
     double test{0.1+0.2};
