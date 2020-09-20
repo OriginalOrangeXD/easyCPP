@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Werror -std=c++14 CMakeFiles/HelloWorld.dir/src/random.cpp.o CMakeFiles/HelloWorld.dir/src/rng.cpp.o -o HelloWorld 

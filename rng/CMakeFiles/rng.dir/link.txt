@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Werror -std=c++14 CMakeFiles/rng.dir/src/random.cpp.o CMakeFiles/rng.dir/src/rng.cpp.o -o rng 

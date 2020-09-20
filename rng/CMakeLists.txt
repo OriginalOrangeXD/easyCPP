@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.5)
 
-project (HelloWorld)
+project (rng)
 
 set (CMAKE_CXX_STANDARD 17)
 
@@ -9,4 +9,4 @@ set (source_dir "${PROJECT_SOURCE_DIR}/src/")
 
 file (GLOB_RECURSE source_files "${source_dir}/*.cpp")
 message(${source_files})
-add_executable (HelloWorld ${source_files})
+add_executable (rng ${source_files})

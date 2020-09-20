@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/robertd/Documents/dev/ball/src/balls.cpp
+constants.h
+/home/robertd/Documents/dev/ball/src/constants.h
+iostream
+-
+
+/home/robertd/Documents/dev/ball/src/constants.h
+

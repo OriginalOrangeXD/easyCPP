@@ -181,9 +181,57 @@ int printNumberOfLegs(Animal animal)
             return 0;
     }
 }
+int sumTo(int a)
+{
+    int total{};
+    for(int i = {}; i <=a; i++)
+        total += i;
+    return total;
+}
 
 int main()
 {
+    std::cout << sumTo(5) << std::endl;
+    for(int ii =0; ii< 10; ++ii)
+        std::cout << ii;
+    return 0;
+    int I = 1;
+    while(I <=5)
+    {
+        int tmp1{5};
+        while(tmp1>=1)
+        {
+            if(tmp1 > I)
+                std::cout << "  ";
+            else
+                std::cout << tmp1 << ' ';
+            --tmp1;
+        }
+
+        std::cout<<'\n';
+        I++;
+    }
+    return 0;
+    int A{5};
+    while(A >0)
+    {
+        int tmp{A};
+        while(tmp >0)
+        {
+            std::cout << tmp << ' ';
+            --tmp;
+        }
+        std::cout << '\n';
+        --A;
+    }
+    return 0;
+    char letter{'a'};
+    while(letter <= 'z')
+    {
+        std::cout << letter << "->" << static_cast<int>(letter) << '\n';
+        ++letter;
+    }
+    return 0;
     Animal cat{Animal::cat};
     Animal chicken{Animal::chicken};
     std::cout << "A " << getAnimalName(cat) << " has " << printNumberOfLegs(cat) << " legs.\n";
